@@ -1,0 +1,91 @@
+/* Добрынин Антон, Казань, 5 апреля. На всю высоту экрана */
+
+body, html {
+	margin:  0 auto;
+}
+
+.wrapper {
+	height: 100vh; 
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	width: 100%;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #FF6347;
+	height: 5vh;
+	width: 100%;
+	order:0;
+}
+
+.main {
+	height: 90vh;
+  	background: #00BFFF;
+	text-align: start;
+	padding-left: 1%;
+  	width: 49%;
+  	order:2;
+}
+
+.aside {
+	width: 25%;
+	height: 90vh;
+}
+
+.aside-1 {
+	background: #FFD700;
+  	order:1;
+}
+
+.aside-2 {
+	background: #FF69B4;
+  	order:3;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #90EE90;
+  	order: 4;
+  	width: 100%;
+  	height: 5vh;
+}
+
+@media only screen and (max-width: 799px) {
+
+	.main {
+		width: 100%;
+		height: 85vh;
+		order:1;
+	}
+
+	.aside {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+		height: 5vh;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	.main {
+		width: 100%;
+		height: 80vh;
+		order:1;
+	}
+
+	.aside {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 5vh;
+	}
+}
